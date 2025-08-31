@@ -1,6 +1,6 @@
-# CropWat
+# AgriWaM
 
-CropWat is a Flutter application designed to help users analyze crop water requirements based on climate, soil, crop, and scheduling data. The app provides a step-by-step interface for inputting relevant data and generates a summary to assist in agricultural planning.
+AgriWaM is an application designed to help users analyze crop water requirements based on climate, soil, crop, and scheduling data. The app provides a step-by-step interface for inputting relevant data and generates a summary to assist in agricultural planning.
 
 ## Features
 
