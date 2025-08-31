@@ -123,11 +123,24 @@ class CropView extends GetView<CropController> {
                             ),
                           ),
                           TableCell(
-                            child: Text(
-                              'Kc value(K꜀ᵦ + Kₑ)',
-                              textAlign: TextAlign.center,
-                              style: columnHeaderStyle,
-                            ),
+                            child: RichText(
+                                textAlign: TextAlign.center,
+                                text: TextSpan(
+                                  style: columnHeaderStyle, // your base style
+                                  children: [
+                                    TextSpan(text: 'K'),
+                                    TextSpan(
+                                      text: 'cb',
+                                      style: TextStyle(fontFeatures: [FontFeature.subscripts()]),
+                                    ),
+                                    TextSpan(text: ' + K'),
+                                    TextSpan(
+                                      text: 'e',
+                                      style: TextStyle(fontFeatures: [FontFeature.subscripts()]),
+                                    ),
+                                  ],
+                                ),
+                              )
                           ),
                         ],
                       ),
