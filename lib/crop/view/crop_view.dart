@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../../styles.dart';
-import '../model/crop_data.dart';
 import '../controller/crop_controller.dart';
 
 class CropView extends GetView<CropController> {
@@ -126,21 +125,31 @@ class CropView extends GetView<CropController> {
                             child: RichText(
                                 textAlign: TextAlign.center,
                                 text: TextSpan(
-                                  style: columnHeaderStyle, // your base style
+                                   style: TextStyle(color: Colors.white, height: 2, fontWeight: FontWeight.bold,),
                                   children: [
                                     TextSpan(text: 'K'),
-                                    TextSpan(
-                                      text: 'cb',
-                                      style: TextStyle(fontFeatures: [FontFeature.subscripts()]),
+                                    WidgetSpan(
+                                      alignment: PlaceholderAlignment.top,
+                                      baseline: TextBaseline.alphabetic,
+                                      child: Text(
+                                        'cb',
+                                         style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,)
+                                      ),
                                     ),
                                     TextSpan(text: ' + K'),
-                                    TextSpan(
-                                      text: 'e',
-                                      style: TextStyle(fontFeatures: [FontFeature.subscripts()]),
-                                    ),
+                                    WidgetSpan(
+                                      alignment: PlaceholderAlignment.top,
+                                      baseline: TextBaseline.alphabetic,
+                                      child: Text(
+                                        'e',
+                                        style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,)
+                                        ),
+                                      ),
+                                    
                                   ],
                                 ),
                               )
+
                           ),
                         ],
                       ),
