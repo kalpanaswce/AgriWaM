@@ -34,9 +34,9 @@ class ScheduleView extends GetView<ScheduleController> {
             SizedBox(height: 24.0),
             
             Obx(() => _buildSummaryField(
-              'Expected Yield (kg/acre)',
+              'Expected Yield (kg/ha)',
               controller.expectedYield.value.toStringAsFixed(2),
-              'kg/acre',
+              'kg/ha',
             )),
             SizedBox(height: 24.0),
             
@@ -48,9 +48,9 @@ class ScheduleView extends GetView<ScheduleController> {
             SizedBox(height: 24.0),
             
              Obx(() => _buildSummaryField(
-              'Water use efficiency (kg/ac/mm)',
+              'Water use efficiency (kg/ha/mm)',
                controller.waterUseEfficiency.value.toStringAsFixed(2),
-              'kg/ac/mm',
+              'kg/ha/mm',
             )),
             SizedBox(height: 40.0)
           ],
